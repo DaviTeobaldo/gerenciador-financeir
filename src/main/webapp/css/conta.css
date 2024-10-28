@@ -1,0 +1,171 @@
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #4CAF50;
+  margin-right: 20px;
+  float: left;
+  margin-left: 15%;
+  margin-top: 4%;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+.user-info p span {
+  font-weight: bold;
+}
+
+.conta {
+  margin-top: 4%;
+  margin-left: 15%;
+}
+
+.value {
+  margin-left: 17%;
+  margin-top: 1%;
+  color: green;
+}
+
+.pix {
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.pix-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 80px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 15px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-left: 2px solid green;
+  border-bottom: 2px solid green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+.pix-code {
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  text-align: right;
+  margin-left: 10%;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.copy-btn:hover {
+  color: darkblue;
+}
+
+.myconta {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.conta-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #eeeeee;
+  border-left: 5px solid green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-top: 4%;
+}
+
+.conta-code {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-left: 15%;
+}
+
+.conta-code img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.conta-code h4 {
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 8%;
+}
+
+.square-button {
+  background-color: rgb(79, 201, 42);
+  border: none;
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.square-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.square-button:active {
+  background-color: rgb(79, 201, 42);
+}
+
+.square-button-1 {
+  background-color: rgb(79, 201, 42);
+  border: none;
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.square-button-1 img {
+  width: 120px;
+  height: 100px;
+}
+
+.square-button-1:active {
+  background-color: rgb(79, 201, 42);
+}

@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: #1EE52E;
+    padding: 0;
+    color: white;
+}
+
+
+
+nav img{
+    width: 100px;
+    
+}
+
+.login ul{
+display: flex;
+list-style: none;
+margin: 0;
+}
+
+.login li{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1AC93A;
+}
+
+
+
+
+
+
+/*Informações*/
+
+.info{
+    margin: 10px;
+}
+
+
+
+.info h1{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: solid;
+}
+
+
+.info .coluna{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #18bd15;
+    color: aliceblue;
+    font-size: medium;
+
+}
+
+.info .coluna img{
+    width: 600px;
+    height: 300px;
+
+}
+
+.info .texto{
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.info .texto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.nos{
+    text-align: center; 
+    
+    
+}   
+
+
+.nos .TextNos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    border: #54af5c solid 1px;
+    background-image: url('../img/green.jpg');
+
+}
+
+.nos .TextNos .qualquer{
+    width: 60%;
+    margin: 10px;
+    background-color: #268758
+
+    ;
+    color: aliceblue;
+    border-radius: 5px;
+
+
+}
+
+
+
+.nos .TextNos img{
+    padding: 10px;
+    width: 100%;
+
+}
+
+.nos .TextNos p{
+    font-size: 19px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*Form*/
+
+
+.contato{
+    text-align: center;
+    margin: 10px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.critica{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: start;
+}
+
+.formcomentário{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0ECC4A;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    
+
+}
+
+.formcomentário button{
+    border: none;
+    background-color: #3ead2f;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+}
+
+.email,.critica{
+    margin: 10px;
+    padding: 10px;
+}
+
+label{
+    margin-right: 5px;
+
+}
+
+textarea, input{
+    width: 100%;
+    border-radius: 40px;
+    padding: 7px;
+    font-size: 20px;
+    border: solid black 1px;
+}
+
+textarea{
+    padding: 15px;
+
+}
+
+/*Footer*/
+
+footer{
+    background-color:  #0c8810;
+    padding: 30px;
+    color: white;
+
+}
+
+
+
+
+.logorede{
+    display: flex;    
+    justify-content: space-between;
+
+}
+
+
+
+.logorede .logo{
+    width: 100px;
+}
+
+
+
+.redes{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.redes img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.opcao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: start;
+
+}
+
+
+#info{
+    margin-left: 20px;
+}
+
+#info ul li {
+list-style: none;
+}
+
+#info ul{
+padding: 0;
+
+}
+
+#info p {
+    text-decoration: none;
+    color: rgb(47, 236, 59);
+}
+
+.quicklink p a{
+    text-decoration: none;
+    color: rgb(47, 236, 59);
+}
+
+
+
+.Inscricao input,.Inscricao button{
+    border-radius: 5px;
+    border: none;
+    border: solid black 0.1px;
+    color: white;
+    padding: 10px;
+
+
+}
+
+.Inscricao button{
+    margin-top: 7px;
+    background-color: #209e24;
+    
+
+
+}
+
+
+
+/*Responsivo*/
+
+@media screen and (max-width:1160px){
+    .opcao{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+
+
+    
+   
+}
+
+@media screen and (max-width:910px){
+    .info .coluna{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+        
+    .info .coluna img{
+        width: 80%;
+        border-radius: 20px;
+    }
+    .opcao #info{
+        margin-top:5px;
+    }
+   
+   
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .formulacao{
+        flex-direction: column;
+       
+    }
+
+ }
+
+ @media screen and (max-width:580px){
+    .opcao{
+        justify-content: center;
+    }
+    #info{
+        text-align: center;
+    }
+    .Inscricao{
+        text-align: center;
+    }
+
+
+    
+}
+
+ @media screen and (max-width: 500px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+
+    
+    }
+
+    .saibamais ul{
+        display: flex;
+    }
+    .saibamais ul li:last-child{
+        margin-left:10px;
+
+    }
+    .redes{
+        align-items: center;
+        justify-content: center;
+    }
+ }
+
