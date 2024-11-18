@@ -1,0 +1,11 @@
+.Trocar{
+	border: none; 
+	color: black;
+	cursor: pointer;
+	text-decoration: none
+}
+
+.Trocar:hover{
+	border: none; 
+	font-size: 25px;
+}

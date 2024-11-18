@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(88, 245, 88);
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+.cadastro{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    width: min-content; /*Adapta-se de acordo com o conteúdo*/
+    padding: 30px 30px 20px 30px;
+    border-radius: 20px;
+    align-items: center;
+    animation: iniciar 1.6s ease-out;
+    background-color: #fff;
+}
+
+.titulo{
+    font-size: 1.8em;
+    margin-bottom: 10%;
+}
+
+.input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0px 0px 12px -5px;
+
+
+}
+
+.input input{
+    width: 100%;
+    border: none;
+    outline: none; /*Caso seja focado o input*/
+    font-size: 11pt;
+
+}
+
+.btn{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.btn button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    cursor: pointer /*Para haver a seta apontando*/;
+    background-color: rgb(1, 216, 1) ;
+    color: #fff;
+
+
+}
+
+.btn button:hover{
+    background-color: rgb(0, 255, 0) ;
+
+}
+
+
+
+@keyframes iniciar{
+    0%{
+        top: -20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    100%{
+        top: 50%;
+        opacity: 100%;
+        pointer-events: all;
+    }
+}
+

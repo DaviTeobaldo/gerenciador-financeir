@@ -1,32 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transação entrada</title>
+    <title>Transação Saída</title>
     <link rel="stylesheet" href="transação.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
 </head>
 <body>
- 
+     
 <%@ page import="Model.Transacao" %>
 <%@ page import="java.util.ArrayList"%> 
 
 <%
 //Pegar atributo do servidor backend	
 ArrayList<Transacao> lista_transacao = (ArrayList<Transacao>) 
-request.getAttribute("dados_transacao_entrada");
+request.getAttribute("dados_transacao_saida");
 
 %> 
 
-
-
-     <header class="navbar navbar-expand-lg bg-success text-white p-3">
+ <header class="navbar navbar-expand-lg bg-success text-white p-3">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Gerenciamento de Contas</a>
           <div class="navbar-nav">
@@ -42,15 +38,26 @@ request.getAttribute("dados_transacao_entrada");
 <div class="tab-container">
     <input type="radio" id="entrada" name="tab" checked>
     <label class="tab" for="entrada">
-        <h4>Entrada</h4>
+        <h4><a href="transacao_entrada" class="tab-link">Entrada</a></h4>
     </label>
 
-    <input type="radio" id="saida" name="tab">
+    <input type="radio" id="saida" name="tab" checked>
     <label class="tab" for="saida">
-        <h4><a href="transacao_saida" class="tab-link">Saída</a></h4>
+        <h4>Saída</h4>
     </label>
 </div>
 
+<div class="content-container">
+    <div id="entrada-content" class="tab-content">
+        <h2>Informações de Entrada</h2>
+        <p>Aqui ficam as informações relacionadas à entrada.</p>
+    </div>
+
+    <div id="saida-content" class="tab-content">
+        <h2>Informações de Saída</h2>
+        <p>Aqui ficam as informações relacionadas à saída.</p>
+    </div>
+</div>
 
 <div class="hoje">
     <h3>Hoje</h3>
@@ -71,9 +78,8 @@ request.getAttribute("dados_transacao_entrada");
 <%}%>
 
 
-    <div class="white">
+<div class="white">
 </div>
-
 
     
 </body>
